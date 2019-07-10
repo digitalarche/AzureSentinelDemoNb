@@ -22,9 +22,10 @@ cd Python-3.7.3/
 make altinstall
 apt-get install python3-pip
 pip3 install pysmb
-wget https://github.com/secpfe/AzureSentinelDemoNb/blob/master/pass.txt
-wget https://github.com/secpfe/AzureSentinelDemoNb/blob/master/users.txt
-wget https://github.com/secpfe/SMBrute/blob/master/smbrute.py
+
+wget https://raw.githubusercontent.com/secpfe/AzureSentinelDemoNb/master/pass.txt
+wget https://raw.githubusercontent.com/secpfe/AzureSentinelDemoNb/master/users.txt
+wget https://raw.githubusercontent.com/secpfe/SMBrute/blob/master/smbrute.py
 
 echo YourUserName >> users.txt
 echo YourWinPassword >> pass.txt
@@ -40,4 +41,3 @@ done
 
 
 exit 0
-
