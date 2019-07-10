@@ -23,6 +23,7 @@ make altinstall
 apt-get install python3-pip -y
 pip3.7 install --upgrade pip
 pip3.7 install pysmb
+pip3.7 install humanfriendly
 cd ..
 wget https://raw.githubusercontent.com/secpfe/AzureSentinelDemoNb/master/pass.txt
 wget https://raw.githubusercontent.com/secpfe/AzureSentinelDemoNb/master/users.txt
