@@ -1,31 +1,31 @@
 #!/bin/bash
 apt-get update
 apt-get upgrade
-apt-get install gcc
-apt-get install make
-apt-get install git
-apt install build-essential checkinstall
-apt install libffi-dev
-apt-get install zlib1g-dev
-apt install libedit-dev
+apt-get install gcc -y
+apt-get install make -y
+apt-get install git -y
+apt install build-essential checkinstall -y
+apt install libffi-dev -y
+apt-get install zlib1g-dev -y
+apt install libedit-dev -y
 wget http://deb.debian.org/debian/pool/main/z/zlib/zlib_1.2.8.dfsg-5.debian.tar.xz
 tar xvf zlib_1.2.8.dfsg-5.debian.tar.xz
 cd debian/
 ./configure
 make altinstall
 cd ..
-apt install libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev
+apt install libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev -y
 wget https://www.python.org/ftp/python/3.7.3/Python-3.7.3.tar.xz
 tar xvf Python-3.7.3.tar.xz
 cd Python-3.7.3/
 ./configure
 make altinstall
-apt-get install python3-pip
+apt-get install python3-pip -y
 pip3 install pysmb
 
 wget https://raw.githubusercontent.com/secpfe/AzureSentinelDemoNb/master/pass.txt
 wget https://raw.githubusercontent.com/secpfe/AzureSentinelDemoNb/master/users.txt
-wget https://raw.githubusercontent.com/secpfe/SMBrute/blob/master/smbrute.py
+wget https://raw.githubusercontent.com/secpfe/SMBrute/master/smbrute.py
 
 echo YourUserName >> users.txt
 echo YourWinPassword >> pass.txt
