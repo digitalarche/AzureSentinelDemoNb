@@ -39,4 +39,5 @@ for addr in `seq 0 1 6 `; do
 ( python3.7 smbrute.py -h $subnet$addr -U users.txt -P pass.txt >> smbrute.log ) &
 done
 
+echo --------------Finished------------------.
 exit 0
