@@ -21,7 +21,8 @@ cd Python-3.7.3/
 ./configure
 make altinstall
 apt-get install python3-pip -y
-pip3 install pysmb
+pip3.7 install --upgrade pip
+pip3.7 install pysmb
 cd ..
 wget https://raw.githubusercontent.com/secpfe/AzureSentinelDemoNb/master/pass.txt
 wget https://raw.githubusercontent.com/secpfe/AzureSentinelDemoNb/master/users.txt
