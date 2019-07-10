@@ -22,7 +22,7 @@ cd Python-3.7.3/
 make altinstall
 apt-get install python3-pip -y
 pip3 install pysmb
-
+cd ..
 wget https://raw.githubusercontent.com/secpfe/AzureSentinelDemoNb/master/pass.txt
 wget https://raw.githubusercontent.com/secpfe/AzureSentinelDemoNb/master/users.txt
 wget https://raw.githubusercontent.com/secpfe/SMBrute/master/smbrute.py
